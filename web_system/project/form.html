@@ -1,5 +1,7 @@
 <h3>Fill in the form to log a ticket</h3>
 
 <form action="" method="post">
+    {% csrf_token %}
+    {{form}}
     <input type="Submit">
 </form>
