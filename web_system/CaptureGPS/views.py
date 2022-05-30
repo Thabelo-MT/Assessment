@@ -1,7 +1,7 @@
 from multiprocessing import context
 from django.core.mail import send_mail
 from .models import Name, Email, TicketID, DateLaunched, DateCompleted, TicketStatus
-from .forms import CaptureGPS
+from .views import CaptureGPS
 
 # Capture the IP address of the user and store in the database.
 def Index(request):
