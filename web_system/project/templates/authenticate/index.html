@@ -1,18 +1,17 @@
-{% extends 'web_system/base.html' %}
-
-{% block content %}
-
-    <h1>Login</h1>
-<br/><br/>
+      <h1>Login</h1>
+<br/>
 
     
-
-    <form action=" method=POST">
-         {% csrf_token %}
-
-
-        <input type="submit" value="Submit" class="btn btn-secondary">
-
+        <form action="" method=POST>
+        <form>
+            <div class="mb-3">
+              <label for="enter_username" class="form-label">Username:</label><br/>
+              <input type="text" class="form-control" name="username">
+            </div>
+            <div class="mb-3">
+              <label for="enter_password" class="form-label">Password:</label><br/>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <input type="submit" value="Submit" class="btn btn-secondary">
     </form>
-
-    <br/><br/>
+<br/>
